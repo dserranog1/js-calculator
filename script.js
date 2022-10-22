@@ -29,6 +29,7 @@ function showResult(event) {
       // if there is input but the length is 0 it means we are operating a mult or a div, so we show the stored results
       input.value = input.dataset.raw;
     }
+    return;
   } else if (operationsArray.length > 3) {
     operatorClicked(event); //operator clicked will delete the last operator so we can have only 3 items in the array
     input.value = operate(
